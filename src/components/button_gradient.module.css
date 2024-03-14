@@ -1,0 +1,52 @@
+.gradientBotton_contact{
+    background: linear-gradient(to right, #4F3DFE, #FFFFFF);
+    background-size: 350% 100%; /* Horizontal gradient will cover whole element */
+    background-position: left bottom; /* Start gradient from the bottom left corner */
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    border-radius: .5rem;
+}
+
+.gradientBotton_demo{
+    background: linear-gradient(to right, #4F3DFE, #FFFFFF);
+    background-size: 350% 100%; /* Horizontal gradient will cover whole element */
+    background-position: left bottom; /* Start gradient from the bottom left corner */
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+.gradientBotton_demo:hover{
+    background: linear-gradient(to right, #4334ca, #ffff);
+    background-size: 350% 100%; /* Horizontal gradient will cover whole element */
+    background-position: left bottom; /* Start gradient from the bottom left corner */
+}
+.gradientBotton_contact:hover{
+    background: linear-gradient(to right, #4334ca, #ffff);
+    background-size: 350% 100%; /* Horizontal gradient will cover whole element */
+    background-position: left bottom; /* Start gradient from the bottom left corner */
+}
+
+
+@media only screen and (max-width: 767px) {
+    .gradientBotton_demo{
+        font-size: .75rem;
+        padding: 0.5rem 1rem;
+
+    }
+
+}

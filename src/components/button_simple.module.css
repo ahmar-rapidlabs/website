@@ -1,0 +1,15 @@
+.simpleButton {
+    background: #4F3DFE;
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    border-radius: 2.5rem;
+}
+
+.simpleButton:hover {
+    background: #4334ca;
+}
