@@ -1,6 +1,8 @@
 import React from 'react'
 import heroImg from '../assets/graphic_elements.png'
 import gradientButton from './button_gradient.module.css'
+import Services from './ServicesSection'
+import Solutions from './SolutionsSection'
 export default function Main() {
   return (
     <>
@@ -55,13 +57,11 @@ export default function Main() {
                 </div>
             </div>
         </div>
-        <div className="main_services text-white mb-48 h-full">
-            <div className="services h-full">
-                <div className="container grid max-w-screen-xl grid-rows-6 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-                    <div className="services-title row-span-6 col-span-6 border-2 border-white flex items-center">Services</div>
-                    <div className="services border-2 row-span-6 col-span-6 border-white">service 1</div>
-                </div>
-            </div>
+        <div className="main_services text-white mb-20 h-full">
+            <Services />
+        </div>
+        <div className="main_solutions px-8">
+            <Solutions />
         </div>
     </>
   )

@@ -20,5 +20,27 @@
     padding: 4rem 1rem;
 }
 
+/* serivices section */
 
+.service-card:hover{
+    background-color: #4F3DFE;
+}
 
+.card-learn-more{
+    background-color: rgba(255, 255, 255, 0.31);
+
+}
+
+/* solutions section */
+.solutions_container{
+    background-image: url("./assets/lines2.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-position: center top; */
+    height: 100%;
+}
+
+.solutions_container .overlay{
+    height: 100vh;
+
+}

@@ -9,7 +9,28 @@
     padding-bottom: 0.625rem;
     border-radius: 2.5rem;
 }
-
+.simpleButton_lg:hover,
 .simpleButton:hover {
     background: #4334ca;
+}
+
+.simpleButton_lg{
+    background: #4F3DFE;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    border-radius: 2.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .simpleButton_lg{
+        font-size: .75rem;
+        padding: 0.5rem 1rem;
+
+    }
+
 }
