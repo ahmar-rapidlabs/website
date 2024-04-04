@@ -9,11 +9,11 @@ function Footer() {
                 <div className="overlay_container text-white">
                     <div className="grid_container grid md:grid-cols-3 grid-col-1">
                         <div className="section1">
-                            <div className="ftr-logo md:py-0 mb-8">
+                            <div className="ftr-logo md:py-0 md:mb-1 mb-8">
                                 <img src={logo} alt="loading failed" className='max-w-full h-auto' />
                             </div>
                             <div className="sec1-info ml-4">
-                                <h2 className="mb-4 text-2xl text-white dark:text-white">Contact Info</h2>
+                                <h2 className="mb-4 md:text-xl text-2xl text-white dark:text-white">Contact Info</h2>
                                 <ul className="max-w-md space-y-1 text-gray-500 list-none list-inside dark:text-gray-400">
                                     <li className='flex items-center text-white text-sm'>
                                         <img src={call} alt="" className='h-4 w-4' /><p className='ml-3'>+14126239377</p>
