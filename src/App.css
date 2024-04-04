@@ -41,6 +41,66 @@
 }
 
 .solutions_container .overlay{
-    height: 100vh;
+    /* height: 100vh; */
 
+}
+
+.works-done,
+.footerBottom{
+    border-top: .5px solid rgba(255, 255, 255, 0.20);
+    border-bottom: .5px solid rgba(255, 255, 255, 0.20);
+}
+
+.works-done .grid_container .grid_item1,
+.works-done .grid_container .grid_item2{
+    border: .5px solid rgba(255, 255, 255, 0.20);
+}
+
+.works-done .grid_container .work-card-footer{
+    border-top: .5px solid rgba(255, 255, 255, 0.20);
+
+}
+
+/* Lets talk section */
+
+.letstalk_section{
+    background-color: #4F3DFE;
+}
+
+/* About us */
+
+@keyframes draw {
+    from {
+      stroke-dashoffset: 10000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  path {
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    animation: draw 5s linear forwards;
+  }
+  /* Footer */
+
+  footer.bg-lines{
+    background-image: url("./assets/footerlines.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+  }
+
+  footer.bg-lines .overlay{
+    height: 100%;
+  }
+
+footer .overlay .overlay_container{
+    background-image: url("./assets/footerbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 4rem 1rem;
 }
