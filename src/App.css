@@ -15,7 +15,6 @@
     background-image: url("./assets/BG.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /* border: 1px solid red; */
     height: 100%;
     padding: 4rem 1rem;
 }
@@ -35,14 +34,7 @@
 .solutions_container{
     background-image: url("./assets/lines2.png");
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    /* background-position: center top; */
     height: 100%;
-}
-
-.solutions_container .overlay{
-    /* height: 100vh; */
-
 }
 
 .works-done,
@@ -103,4 +95,16 @@ footer .overlay .overlay_container{
     background-repeat: no-repeat;
     height: 100%;
     padding: 4rem 1rem;
+}
+
+/* Individual services */
+.individual_service_page_container{
+    background-image: url("./assets/services_detail_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+}
+.individual_service_page_container .overlay{
+    height: 100vh;
 }

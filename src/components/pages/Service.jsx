@@ -6,7 +6,7 @@ import Solutions from '../SolutionsSection'
 import WorkDone from '../WorkDone'
 import LetstalkSection from '../LetstalkSection'
 import AboutusSection from '../AboutusSection'
-
+import ServicesPage from '../ServicesPage'
 function Service() {
   return (
     <>
@@ -35,8 +35,9 @@ function Service() {
         {/* Lets talk */}
         <LetstalkSection/>
         {/* About Us */}
-
         <AboutusSection />
+
+        <ServicesPage/>
     </>
   )
 }

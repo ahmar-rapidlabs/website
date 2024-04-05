@@ -1,7 +1,6 @@
 import React from 'react'
 import heroImg from '../assets/graphic_elements.png'
 import gradientButton from './button_gradient.module.css'
-import simplebtn from './button_simple.module.css'
 import Services from './ServicesSection'
 import Solutions from './SolutionsSection'
 import WorkDone from './WorkDone'
@@ -55,14 +54,12 @@ export default function Main() {
         </div>
         {/* Works Done */}
         <WorkDone />
-
         {/* lets talk */}
         <LetstalkSection/>
         {/* About us */}
         <AboutusSection />
         {/* Footer */}
         <Footer />
-
     </>
   )
 }
