@@ -4,6 +4,7 @@ import call from '../assets/icons/call.png'
 function Footer() {
     return (
         <>
+        <div className="footer mt-12">
         <footer className='bg-lines'>
             <div className="overlay" >
                 <div className="overlay_container text-white">
@@ -121,10 +122,8 @@ function Footer() {
                 
             </div>
         </div>
+        </div>
         </>
-        
-
     )
 }
-
 export default Footer
