@@ -6,7 +6,7 @@ import Solutions from '../SolutionsSection'
 import WorkDone from '../WorkDone'
 import LetstalkSection from '../LetstalkSection'
 import AboutusSection from '../AboutusSection'
-import ServicesPage from '../ServicesPage'
+import ServicesPage from './ServicesPage'
 function Service() {
   return (
     <>

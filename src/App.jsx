@@ -4,7 +4,7 @@ import Nav from './components/nav'
 import Main from './components/main'
 import Footer from './components/footer'
 import Service from './components/pages/Service'
-import ServicesPage from './components/ServicesPage'
+import ServicesPage from './components/pages/ServicesPage'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 

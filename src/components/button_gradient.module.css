@@ -14,7 +14,7 @@
 
 .gradientBotton_demo{
     background: linear-gradient(to right, #4F3DFE, #FFFFFF);
-    background-size: 350% 100%; /* Horizontal gradient will cover whole element */
+    background-size: 450% 100%; /* Horizontal gradient will cover whole element */
     background-position: left bottom; /* Start gradient from the bottom left corner */
     color: #fff;
     font-size: 1rem;
@@ -40,6 +40,7 @@
     background-size: 350% 100%; /* Horizontal gradient will cover whole element */
     background-position: left bottom; /* Start gradient from the bottom left corner */
 }
+
 
 
 @media only screen and (max-width: 767px) {

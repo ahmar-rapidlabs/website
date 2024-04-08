@@ -38,7 +38,8 @@
 }
 
 .works-done,
-.footerBottom{
+.footerBottom,
+.tehnologies_used_container{
     border-top: .5px solid rgba(255, 255, 255, 0.20);
     border-bottom: .5px solid rgba(255, 255, 255, 0.20);
 }
@@ -102,9 +103,18 @@ footer .overlay .overlay_container{
     background-image: url("./assets/services_detail_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
+    background-position: top bottom;
+    background-blend-mode: overlay;
     height: 100%;
 }
 .individual_service_page_container .overlay{
-    height: 100vh;
+    /* height: 100vh; */
+}
+.individual_service_page_container .overlay .service_title{
+    background: linear-gradient(to right, #4F3DFE, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 65px;
+    font-weight: 600;
+
 }
