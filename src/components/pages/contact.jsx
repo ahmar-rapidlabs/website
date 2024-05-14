@@ -92,13 +92,13 @@ function ContactPage() {
         {/* Step indicators */}
         <ul className="flex flex-wrap justify-between">
           <li className={step === 1 ? 'basis-1/3 px-2' : 'basis-1/3 px-2 opacity-50 '}>
-            <button className="inline-block p-4 w-full border-b-4 border-white hover:text-gray-600 dark:hover:text-gray-300" onClick={() => setStep(1)}>Step 1</button>
+            <button className="inline-block p-4 w-full border-b-4 border-white hover:text-gray-600 dark:hover:text-gray-300" onClick={() => setStep(1)} disabled>Step 1</button>
           </li>
           <li className={step === 2 ? 'px-2 basis-1/3' : 'basis-1/3 px-2 opacity-50'}>
-            <button className="inline-block w-full p-4 border-b-4 border-white hover:text-gray-600 dark:hover:text-gray-300" onClick={() => setStep(2)}>Step 2</button>
+            <button className="inline-block w-full p-4 border-b-4 border-white hover:text-gray-600 dark:hover:text-gray-300" onClick={() => setStep(2)} disabled>Step 2</button>
           </li>
           <li className={step === 3 ? 'px-2 basis-1/3' : 'basis-1/3 px-2 opacity-50'}>
-            <button className="inline-block w-full p-4 border-b-4 border-white hover:text-gray-600 dark:hover:text-gray-300" onClick={() => setStep(3)}>Step 3</button>
+            <button className="inline-block w-full p-4 border-b-4 border-white hover:text-gray-600 dark:hover:text-gray-300" onClick={() => setStep(3)} disabled>Step 3</button>
           </li>
         </ul>
       </div>
