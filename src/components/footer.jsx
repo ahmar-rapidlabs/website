@@ -30,13 +30,13 @@ function Footer() {
                                 </div>
                                 <ul className="text-sm space-y-2 text-gray-500 list-none list-inside dark:text-gray-400 capitalize">
                                     <li className='text-white'>
-                                        <Link to="/commingsoon">about us</Link>
+                                        <Link to="/aboutus">about us</Link>
                                     </li>
                                     <li className='text-white'>
-                                        <Link to="/commingsoon">Careers</Link>
+                                        <Link to="/services">Services</Link>
                                     </li>
                                     <li className='text-white'>
-                                        <Link to="/commingsoon">Blog</Link>
+                                        <Link to="/blog">Blog</Link>
                                     </li>
                                     <li className='text-white'>
                                         <Link to="/contact">Pricing</Link>
