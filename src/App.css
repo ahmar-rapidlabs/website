@@ -114,7 +114,6 @@ footer .overlay .overlay_container{
     background: linear-gradient(to right, #4F3DFE, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 65px;
     font-weight: 600;
 
 }

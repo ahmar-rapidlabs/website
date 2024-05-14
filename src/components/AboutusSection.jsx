@@ -21,7 +21,7 @@ function AboutusSection() {
                     <AboutusAnimation />
                 </div>
                 <div className="contactBtn flex justify-center">
-                    <Link to="" className={gradientButton.gradientBotton_contact}>Contact us</Link>
+                    <Link to="/contact" className={gradientButton.gradientBotton_contact}>Contact us</Link>
                 </div>
             </div>
         </div>

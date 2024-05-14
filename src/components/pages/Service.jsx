@@ -19,7 +19,7 @@ function Service() {
                 <p className='italic text-white text-center mt-2'>We provide services that resonate with business goal and individual interest.</p>
             </div>
             <div className="contact-btn text-center">
-                <Link to="#" className={gradientButton.gradientBotton_contact}>
+                <Link to="contact" className={gradientButton.gradientBotton_contact}>
                     Contact Us
                 </Link>
             </div>

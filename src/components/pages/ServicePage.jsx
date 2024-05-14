@@ -7,26 +7,26 @@ function ServicePage(props) {
     return (
         <>
             <div className="individual_service_page_container py-10">
-                <div className="overlay mx-14">
+                <div className="overlay md:mx-14 mx-5">
                     <div className='mb-3'>
-                        <h1 className='service_title'>{props.title}</h1>
+                        <h1 className='service_title text-4xl md:text-6xl'>{props.title}</h1>
                     </div>
                     <div className=''>
-                        <p className='text-3xl'>{props.description}</p>
+                        <p className='text-xl md:text-3xl'>{props.description}</p>
                     </div>
-                    <div className="descover-btn mt-10">
+                    <div className="descover-btn mt-4 md:mt-10">
                         <a href="" className={gradientButton.gradientBotton_demo}>Discuss your idea</a>
                     </div>
                 </div>
             </div>
             <div className="services_section_title my-11 mx-14">
-                <h2 className='capitalize text-5xl'>
+                <h2 className='capitalize md:text-5xl text-4xl'>
                     {props.title}
                 </h2>
             </div>
-            <div className="services_list grid grid-cols-2 gap-x-8 mx-14">
-                <div className="container_pic">
-                    <img src={props.image} alt="Unable to load" className='h-auto max-w-full' />
+            <div className="services_list grid md:grid-cols-2 gap-x-8 md:mx-14 mx-8">
+                <div className="container_pic place-self-center">
+                    <img src={props.image} alt="Unable to load" className='h-96 md:h-auto max-w-full' />
                 </div>
                 <div className="container_list max-w-xl">
                     <div ClassName="divide-y divide-blue-200">
@@ -54,7 +54,7 @@ function ServicePage(props) {
                 {props.technologies && (
                     <>
                     <div className="techs-used-serv-title mb-4">
-                        <h2 className='capitalize text-5xl'>Technologies we use</h2>
+                        <h2 className='capitalize text-4xl md:text-5xl'>Technologies we use</h2>
                     </div>
                     <div className="detail-tag-line mb-12">
                         <p>See what Rapid Labs are working with while creating your next AI/ML solution.</p>
@@ -67,10 +67,8 @@ function ServicePage(props) {
                             if (techObject && typeof techObject === 'object') {
                                 // Find the key containing the URL
                                 const imageUrlKey = Object.keys(techObject).find(key => typeof techObject[key] === 'string');
-
                                 // Get the URL from the found key
                                 const imageUrl = techObject[imageUrlKey];
-
                                 return (
                                     <span key={index} className="text-lg text-white hover:bg-indigo-900 hover:cursor-pointer font-medium px-2.5 py-1.5 rounded-b-lg rounded-r-lg dark:bg-gray-700 dark:text-gray-400 border border-indigo-500">
                                         <img src={imageUrl} alt={techName} className="inline-block w-6 h-6 mr-2" />

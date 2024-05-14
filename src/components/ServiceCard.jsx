@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServiceCard = ({ title, description, icon, url }) => {
     return (
-        <a href={`/services/${url}`} className="service-card text-white p-6 shadow-md hover:shadow-lg transition duration-300 ease-in-out"
+        <a href={`/services/${url}`} className="service-card mx-3 md:mx-0 text-white p-6 shadow-md hover:shadow-lg transition duration-300 ease-in-out"
         style={{
             border: "1px solid rgba(255, 255, 255, 0.2)"
           }}>

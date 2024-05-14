@@ -5,17 +5,18 @@ import ai from '../assets/icons/service_ai.png'
 import cto from '../assets/icons/service_cto.png'
 import fullstack from '../assets/icons/service_fullstack.png'
 import analytics from '../assets/icons/service_analytics.png'
+import { Link } from 'react-router-dom'
 const ServicesSection = () => {
     return (
       <>
         <div className="md:flex">
-      <div className="services-container text-center py-4 px-4 flex md:flex-col flex-row items-center md:items-center justify-between md:justify-center md:mb-0 mb-16 lg:basis-2/4"
+      <div className="services-container text-center mx-3 md:mx-0 py-4 px-4 flex md:flex-col flex-row items-center md:items-center justify-between md:justify-center md:mb-0 mb-16 lg:basis-2/4"
       style={{
         border: "1px solid rgba(255, 255, 255, 0.2)"
       }}
       >
         <h2 className='text-white text-3xl md:text-6xl leading-relaxed mb-0 md:mb-6'>Services</h2>
-        <a href="" className={getStarted.simpleButton_lg}>Get Started</a>
+        <Link to="/contact" className={getStarted.simpleButton_lg}>Get Started</Link>
       </div>
       <div className="lg:basis-2/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 md:gap-0">
         <ServiceCard
@@ -33,7 +34,7 @@ const ServicesSection = () => {
           <ServiceCard
             url = 'fullstack'
             title="Full Stack Development"
-            description="We offer comprehensive web and mobile app solutions, from backend to frontend, ensuring a seamless user experience."
+            description="We offer comprehensive web and mobile app solutions, from backend to frontend, ensuring Link seamless user experience."
             icon={fullstack}
           />
           <ServiceCard
