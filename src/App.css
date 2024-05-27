@@ -110,10 +110,25 @@ footer .overlay .overlay_container{
 .individual_service_page_container .overlay{
     /* height: 100vh; */
 }
-.individual_service_page_container .overlay .service_title{
+/* Service page + portfolio */
+.individual_service_page_container .overlay .service_title,
+.portfolioPageContainer .heroSectionPortfolio .portolio_title{
     background: linear-gradient(to right, #4F3DFE, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
 
+}
+/* portfolio page */
+.portfolioItemsList .PortfolioItemLink:hover{
+    background-color: rgb(90, 73, 254, 0.25);
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
+}
+
+.portfolio-image {
+    width: 300px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
 }

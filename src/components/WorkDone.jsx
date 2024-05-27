@@ -1,5 +1,5 @@
 import React from 'react'
-import workdone_cardio from '../assets/works/cardiobot.png'
+import workdone_cardio from '../assets/works/cardiobot_landing.png'
 import workdone_mental from '../assets/works/mentalhealth.png'
 import simplebtn from './button_simple.module.css'
 
