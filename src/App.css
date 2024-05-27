@@ -132,3 +132,28 @@ footer .overlay .overlay_container{
     height: 200px; /* Set your desired height */
     object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
 }
+
+/* About us page */
+.aboutus_main_container .aboutus_herosection_container{
+    background-image: url("./assets/aboutus/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top bottom;
+    background-blend-mode: overlay;
+    height: 100%;
+}
+.aboutus_herosection_container .overlay{
+    /* height: 100vh; */
+    height: 100vh;
+}
+.aboutus_main_container .aboutus_herosection_container .overlay .overlay_content .aboutus_herosec_chatbtn{
+    background-color: #4F3DFE;
+}
+.aboutus_main_container .aboutus_herosection_container .overlay .overlay_content .aboutus_herosec_chatbtn:hover,
+.aboutus_main_container .aboutus_herosection_container .overlay .overlay_content .aboutus_herosec_chatbtn:focus{
+    background-color: #4535db;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+
+}

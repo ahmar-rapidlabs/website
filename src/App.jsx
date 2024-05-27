@@ -9,6 +9,7 @@ import ContactPage from './components/pages/contact'
 import CommingSoon from './components/pages/CommingSoon'
 import PortfolioItems from './components/pages/portfolio/PortfolioItems'
 import PortfolioProps from './components/pages/portfolio/PortfolioProps'
+import AboutUs from './components/pages/aboutus/AboutUs'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
@@ -19,7 +20,7 @@ function App() {
     {path: '/services/:category', element: <><Nav/><ServicesPage/><Footer /></>},
     {path: '/contact', element: <><Nav/><ContactPage /><Footer /></>},
     // {path: '/portfolio', element: <><Nav/><CommingSoon /><Footer /></>},
-    {path: '/aboutus', element: <><Nav/><CommingSoon /><Footer /></>},
+    {path: '/aboutus', element: <><Nav/><AboutUs /><Footer /></>},
     {path: '/blog', element: <><Nav/><CommingSoon /><Footer /></>},
     {path: '/portfolio', element: <><Nav/><PortfolioProps /><Footer /></>},
 
