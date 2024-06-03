@@ -3,6 +3,8 @@ import gradientButton from '../button_gradient.module.css'
 import negative from '../../assets/svg/negative.svg'
 import positive from '../../assets/svg/positive.svg'
 import WorkDone from '../WorkDone';
+import { Link } from 'react-router-dom'
+
 function ServicePage(props) {
     return (
         <>
@@ -15,7 +17,7 @@ function ServicePage(props) {
                         <p className='text-xl md:text-3xl'>{props.description}</p>
                     </div>
                     <div className="descover-btn mt-4 md:mt-10">
-                        <a href="" className={gradientButton.gradientBotton_demo}>Discuss your idea</a>
+                        <Link to="/contact" className={gradientButton.gradientBotton_demo}>Discuss your idea</Link>
                     </div>
                 </div>
             </div>

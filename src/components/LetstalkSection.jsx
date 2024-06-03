@@ -13,8 +13,8 @@ function LetstalkSection() {
                     <div className="description mt-3">
                         <p className='text-md text-white'>AI enabled infrastructure helps us deliver the optimum product for your needs in ultra lightning time.</p>
                     </div>
-                    <div className="flex items-center justify-center bg-white rounded-full w-12 h-12 md:w-24 md:h-24 mt-8">
-                      <span className="md:text-lg text-xs text-center font-bold" style={{color: "#000"}}>LET'S<br/>TALK</span>
+                    <div className="flex items-center justify-center bg-white rounded-full w-20 h-20 md:w-24 md:h-24 mt-8">
+                      <span className="md:text-lg text-md text-center font-bold" style={{color: "#000"}}>LET'S<br/>TALK</span>
                     </div>
                 </div>
                 <div className="right_list md:w-4/5" style={{border: ""}}>

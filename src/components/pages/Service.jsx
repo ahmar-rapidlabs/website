@@ -16,10 +16,10 @@ function Service() {
             </div>
             <div className="tagline mb-20">
                 <h1 className='text-white text-center text-4xl uppercase mb-6'>FROM IDEA-tO-DEVELOPMENT</h1>
-                <p className='italic text-white text-center mt-2'>We provide services that resonate with business goal and individual interest.</p>
+                <p className='italic text-white text-center mt-2 px-6'>We provide services that resonate with business goal and individual interest.</p>
             </div>
             <div className="contact-btn text-center">
-                <Link to="contact" className={gradientButton.gradientBotton_contact}>
+                <Link to="/contact" className={gradientButton.gradientBotton_contact}>
                     Contact Us
                 </Link>
             </div>

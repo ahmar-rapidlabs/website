@@ -134,6 +134,7 @@ footer .overlay .overlay_container{
 }
 
 /* About us page */
+
 .aboutus_main_container .aboutus_herosection_container{
     background-image: url("./assets/aboutus/bg.png");
     background-repeat: no-repeat;
@@ -142,10 +143,7 @@ footer .overlay .overlay_container{
     background-blend-mode: overlay;
     height: 100%;
 }
-.aboutus_herosection_container .overlay{
-    /* height: 100vh; */
-    height: 100vh;
-}
+
 .aboutus_main_container .aboutus_herosection_container .overlay .overlay_content .aboutus_herosec_chatbtn{
     background-color: #4F3DFE;
 }
@@ -155,5 +153,13 @@ footer .overlay .overlay_container{
     transition-property: all;
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
+
+}
+
+/* Media query for medium-sized screens and above */
+@media (min-width: 768px) {
+    .aboutus_herosection_container .overlay{
+        height: 100vh;
+    }
 
 }

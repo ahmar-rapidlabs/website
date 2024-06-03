@@ -1,6 +1,8 @@
 import React from 'react';
 
 function ContactStep2({ selectedCategories, handleChange }) {
+    let otherCheckboxRendered = false;
+
     return (
         <div>
             <div className="select-cat-tec-main-step2 mx-6 md:ml-32 mt-7">
@@ -17,7 +19,6 @@ function ContactStep2({ selectedCategories, handleChange }) {
                                     name='analyticsRoadmaps'
                                     value="Analytics Roadmaps"
                                     className="hidden peer"
-                                     // You can set initial checked value if needed
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="analytics-roadmaps-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
@@ -33,7 +34,6 @@ function ContactStep2({ selectedCategories, handleChange }) {
                                     name='dataMining'
                                     value="Data Mining"
                                     className="hidden peer"
-                                    
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="data-mining-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
@@ -49,7 +49,6 @@ function ContactStep2({ selectedCategories, handleChange }) {
                                     name='predictivemodel'
                                     value="Predictive Model"
                                     className="hidden peer"
-                                    
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="predictive-model-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
@@ -65,7 +64,6 @@ function ContactStep2({ selectedCategories, handleChange }) {
                                     name='webscrapping'
                                     value="Web Scrapping"
                                     className="hidden peer"
-                                    
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="webscrapping-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
@@ -74,25 +72,26 @@ function ContactStep2({ selectedCategories, handleChange }) {
                                     </div>
                                 </label>
                             </div>
-                            <div className="da-tect-categ-4">
-                                <input
-                                    type="checkbox"
-                                    id="other-option"
-                                    name='other'
-                                    value="Other"
-                                    className="hidden peer"
-                                    
-                                    onChange={handleChange}
-                                />
-                                <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
-                                    <div className="block">
-                                        <div className="w-full text-sm text-nowrap md:text-md font-normal">Other</div>
-                                    </div>
-                                </label>
-                            </div>
+                            {!otherCheckboxRendered && (otherCheckboxRendered = true) && (
+                                <div className="da-tect-categ-4">
+                                    <input
+                                        type="checkbox"
+                                        id="other-option"
+                                        name='other'
+                                        value="Other"
+                                        className="hidden peer"
+                                        onChange={handleChange}
+                                    />
+                                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
+                                        <div className="block">
+                                            <div className="w-full text-sm text-nowrap md:text-md font-normal">Other</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            )}
                         </>
                     )}
-                        {selectedCategories.includes('Artificial Intelligence / Machine Learning') && (
+                    {selectedCategories.includes('Artificial Intelligence / Machine Learning') && (
                         <>
                             <div className="ai-tect-categ-1">
                                 <input
@@ -101,7 +100,6 @@ function ContactStep2({ selectedCategories, handleChange }) {
                                     name='GenerativeAI'
                                     value="Generative AI"
                                     className="hidden peer"
-                                     // You can set initial checked value if needed
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="GenerativeAI" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
@@ -117,7 +115,6 @@ function ContactStep2({ selectedCategories, handleChange }) {
                                     name='ComputerVision'
                                     value="Computer Vision"
                                     className="hidden peer"
-                                    
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="ComputerVision" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
@@ -133,7 +130,6 @@ function ContactStep2({ selectedCategories, handleChange }) {
                                     name='AIChatbot'
                                     value="AI Chatbot"
                                     className="hidden peer"
-                                    
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="AIChatbot" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
@@ -149,7 +145,6 @@ function ContactStep2({ selectedCategories, handleChange }) {
                                     name='timeseries'
                                     value="Time Series"
                                     className="hidden peer"
-                                    
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="timeseries" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
@@ -158,25 +153,26 @@ function ContactStep2({ selectedCategories, handleChange }) {
                                     </div>
                                 </label>
                             </div>
-                            <div className="ai-tect-categ-4">
-                                <input
-                                    type="checkbox"
-                                    id="other-option"
-                                    name='other'
-                                    value="Other"
-                                    className="hidden peer"
-                                    
-                                    onChange={handleChange}
-                                />
-                                <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
-                                    <div className="block">
-                                        <div className="w-full text-sm text-nowrap md:text-md font-normal">Other</div>
-                                    </div>
-                                </label>
-                            </div>
+                            {!otherCheckboxRendered && (otherCheckboxRendered = true) && (
+                                <div className="ai-tect-categ-4">
+                                    <input
+                                        type="checkbox"
+                                        id="other-option"
+                                        name='other'
+                                        value="Other"
+                                        className="hidden peer"
+                                        onChange={handleChange}
+                                    />
+                                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
+                                        <div className="block">
+                                            <div className="w-full text-sm text-nowrap md:text-md font-normal">Other</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            )}
                         </>
                     )}
-                        {selectedCategories.includes('Full Stack Development') && (
+                    {selectedCategories.includes('Full Stack Development') && (
                         <>
                             <div className="fs-tect-categ-1">
                                 <input
@@ -185,7 +181,6 @@ function ContactStep2({ selectedCategories, handleChange }) {
                                     name='Customwebportals'
                                     value="Custom web portals"
                                     className="hidden peer"
-                                     // You can set initial checked value if needed
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="Customwebportals" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
@@ -197,16 +192,15 @@ function ContactStep2({ selectedCategories, handleChange }) {
                             <div className="fs-tect-categ-2">
                                 <input
                                     type="checkbox"
-                                    id="Cloudbasedplatforms"
-                                    name='Cloudbasedplatforms'
-                                    value="Cloud based platforms"
+                                    id="ecommercesolutions"
+                                    name='ecommercesolutions'
+                                    value="E-commerce solutions"
                                     className="hidden peer"
-                                    
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="Cloudbasedplatforms" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
+                                <label htmlFor="ecommercesolutions" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
                                     <div className="block">
-                                        <div className="w-full text-sm text-nowrap md:text-md font-normal">Cloud based platforms</div>
+                                        <div className="w-full text-sm text-nowrap md:text-md font-normal">E-commerce solutions</div>
                                     </div>
                                 </label>
                             </div>
@@ -217,7 +211,6 @@ function ContactStep2({ selectedCategories, handleChange }) {
                                     name='APIDevelopment'
                                     value="API Development"
                                     className="hidden peer"
-                                    
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="APIDevelopment" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
@@ -229,196 +222,39 @@ function ContactStep2({ selectedCategories, handleChange }) {
                             <div className="fs-tect-categ-4">
                                 <input
                                     type="checkbox"
-                                    id="uiuxdev"
-                                    name='uiuxdev'
-                                    value="UI / UX Development"
+                                    id="cmsdevelopment"
+                                    name='cmsdevelopment'
+                                    value="CMS development"
                                     className="hidden peer"
-                                    
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="uiuxdev" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
+                                <label htmlFor="cmsdevelopment" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
                                     <div className="block">
-                                        <div className="w-full text-sm text-nowrap md:text-md font-normal">UI / UX Development</div>
+                                        <div className="w-full text-sm text-nowrap md:text-md font-normal">CMS development</div>
                                     </div>
                                 </label>
                             </div>
-                            <div className="fs-tect-categ-4">
-                                <input
-                                    type="checkbox"
-                                    id="other-option"
-                                    name='other'
-                                    value="Other"
-                                    className="hidden peer"
-                                    
-                                    onChange={handleChange}
-                                />
-                                <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
-                                    <div className="block">
-                                        <div className="w-full text-sm text-nowrap md:text-md font-normal">Other</div>
-                                    </div>
-                                </label>
-                            </div>
+                            {!otherCheckboxRendered && (otherCheckboxRendered = true) && (
+                                <div className="fs-tect-categ-4">
+                                    <input
+                                        type="checkbox"
+                                        id="other-option"
+                                        name='other'
+                                        value="Other"
+                                        className="hidden peer"
+                                        onChange={handleChange}
+                                    />
+                                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
+                                        <div className="block">
+                                            <div className="w-full text-sm text-nowrap md:text-md font-normal">Other</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            )}
                         </>
                     )}
                 </div>
             </div>
-            {/* 
-
-            Todo:
-            - Make components of budget and estimated time 
-
-            */}
-            {/* Budget */}
-            <div className="yourbudget-main mx-6 md:ml-32 mt-7">
-                <div className="yourbudget">
-                    <div className="title mb-6">
-                        <h5 className='text-white text-lg md:text-2xl uppercase'>What is your budget ?</h5>
-                    </div>
-                    <div className="budgetcheckboxes flex flex-wrap gap-4 mt-3">
-                        <div className="budget1">
-                            <input
-                                type="checkbox"
-                                id="less_then_tenk"
-                                name='ltTenk'
-                                value="Less Then 10K USD"
-                                className="hidden peer"
-                                
-                                onChange={handleChange}
-                            />
-                            <label htmlFor="less_then_tenk" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
-                                <div className="block">
-                                    <div className="w-full text-sm text-nowrap md:text-md font-normal">&#60; $10,000</div>
-                                </div>
-                            </label>
-                        </div>
-                        <div className="budget2">
-                            <input
-                                type="checkbox"
-                                id="ten-to-twentyfive"
-                                name='ten-tf'
-                                value="Between 10K to 25K USD"
-                                className="hidden peer"
-                                
-                                onChange={handleChange}
-                            />
-                            <label htmlFor="ten-to-twentyfive" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
-                                <div className="block">
-                                    <div className="w-full text-sm text-nowrap md:text-md font-normal">$10,000 - $25,000</div>
-                                </div>
-                            </label>
-                        </div>
-                        <div className="budget3">
-                            <input
-                                type="checkbox"
-                                id="twentyfive-to-hundred"
-                                name='tf-hund'
-                                value="Between 25k to 100k USD"
-                                className="hidden peer"
-                                
-                                onChange={handleChange}
-                            />
-                            <label htmlFor="twentyfive-to-hundred" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
-                                <div className="block">
-                                    <div className="w-full text-sm text-nowrap md:text-md font-normal">$25,000 - $100,000</div>
-                                </div>
-                            </label>
-                        </div>
-                        <div className="budget4">
-                            <input
-                                type="checkbox"
-                                id="morethanhundred"
-                                name='morethanhundred'
-                                value="More than 100k USD"
-                                className="hidden peer"
-                                
-                                onChange={handleChange}
-                            />
-                            <label htmlFor="morethanhundred" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
-                                <div className="block">
-                                    <div className="w-full text-sm text-nowrap md:text-md font-normal">$100,000 +</div>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            {/* estimated timeframe */}
-            <div className="estTimeframe-main mx-6 md:ml-32 mt-7">
-                <div className="estTimeframe">
-                    <div className="title mb-6">
-                        <h5 className='text-white text-md md:text-2xl uppercase'>What is your estimated time frame ?</h5>
-                    </div>
-                    <div className="estTimecheckboxes flex flex-wrap gap-4 mt-3">
-                        <div className="est1">
-                            <input
-                                type="checkbox"
-                                id="one-to-three"
-                                name='one-to-three'
-                                value="One to Three Months"
-                                className="hidden peer"
-                                
-                                onChange={handleChange}
-                            />
-                            <label htmlFor="one-to-three" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
-                                <div className="block">
-                                    <div className="w-full text-sm text-nowrap md:text-md font-normal">1-3 months</div>
-                                </div>
-                            </label>
-                        </div>
-                        <div className="est2">
-                            <input
-                                type="checkbox"
-                                id="three-to-six"
-                                name='three-to-six'
-                                value="Three to Six Months"
-                                className="hidden peer"
-                                
-                                onChange={handleChange}
-                            />
-                            <label htmlFor="three-to-six" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
-                                <div className="block">
-                                    <div className="w-full text-sm text-nowrap md:text-md font-normal">3-6 months</div>
-                                </div>
-                            </label>
-                        </div>
-                        <div className="est3">
-                            <input
-                                type="checkbox"
-                                id="six-to-oneyr"
-                                name='six-to-oneyr'
-                                value="Six Months to One Year"
-                                className="hidden peer"
-                                
-                                onChange={handleChange}
-                            />
-                            <label htmlFor="six-to-oneyr" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
-                                <div className="block">
-                                    <div className="w-full text-sm text-nowrap md:text-md font-normal">6 months to 1 year</div>
-                                </div>
-                            </label>
-                        </div>
-                        <div className="est4">
-                            <input
-                                type="checkbox"
-                                id="more-oneyr"
-                                name='more-oneyr'
-                                value="More Than One year"
-                                className="hidden peer"
-                                
-                                onChange={handleChange}
-                            />
-                            <label htmlFor="more-oneyr" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-900 hover:bg-indigo-600">
-                                <div className="block">
-                                    <div className="w-full text-sm text-nowrap md:text-md font-normal">More than 1 year</div>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     );
 }

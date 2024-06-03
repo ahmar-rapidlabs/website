@@ -71,8 +71,8 @@ export default function Nav() {
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
+            <div className="-my-6 divide-y divide-gray-500/30">
+              <div className="space-y-2 py-8 flex flex-col">
                 <NavLink to="/" onClick={closeMobileMenu} isActive={location.pathname === '/'}>Home</NavLink>
                 <NavLink to="/services" onClick={closeMobileMenu} isActive={location.pathname === '/services'}>Services</NavLink>
                 <NavLink to="/portfolio" onClick={closeMobileMenu} isActive={location.pathname === '/portfolio'}>Portfolio</NavLink>
@@ -100,7 +100,7 @@ function NavLink({ to, onClick, isActive, children }) {
   return (
     <Link
       to={to}
-      className={`text-sm font-semibold leading-6 text-white ${isActive ? 'border-b-2 border-white' : ''}`}
+      className={`text-sm font-semibold rounded-lg px-3 py-2.5 leading-6 md:hover:bg-transparent hover:bg-blue-500 text-white ${isActive ? 'border-b-2 border-white' : ''}`}
       onClick={onClick}
     >
       {children}
