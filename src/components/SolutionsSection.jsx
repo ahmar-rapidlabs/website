@@ -20,7 +20,7 @@ function SolutionsSection() {
         </div>
         <div className="solutions_container">
             <div className="overlay">
-              <div className="md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-3 lg:gap-10 mb-36">
+              <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-3 lg:gap-5 mb-36">
                 <SolutionsCard 
                 id='01'
                 name='Computer Vision' 
@@ -28,7 +28,7 @@ function SolutionsSection() {
                 description="Enable computers to interpret and understand visual information from the world around them, transforming images and videos into actionable data." />
                 <SolutionsCard 
                 id='02' 
-                name='Gnerative AI' 
+                name='Generative AI' 
                 image={sol_gen}
                 description="Creates new content, such as text, 
                 images, music, or code, based on 

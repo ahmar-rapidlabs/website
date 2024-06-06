@@ -7,8 +7,8 @@ function PortfolioItems({ title, description, img }) {
           <div className="link-icon flex justify-end pr-6 pt-6 pb-8 md:pb-0">
               <a href="" className=''><img src={LinkIcon} alt={LinkIcon} className='h-auto max-w-full' /></a>
           </div>
-          <a href='#' className=" flex md:flex-row flex-col justify-center gap-8 px-12 pb-12">
-            <div className="portfolioprojimg basis-3/4 mr-0 md:mr-10" >
+          <a href='#' className=" flex md:flex-row flex-col justify-around gap-2 px-12 pb-12">
+            <div className="portfolioprojimg basis-3/4 mr-0 md:mr-0" >
                 <img src={img} alt={title} className="" />
             </div>
             <div className="portfolioprojdesc basis-3/4 flex flex-col justify-center">

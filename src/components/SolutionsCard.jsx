@@ -28,9 +28,9 @@ function SolutionsCard(props) {
                       <div>
                           <div className="p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
                               <div className="opacity-100 text-sm">
-                                <h3 className="lg:text-6xl md:text-4xl text-lg font-bold text-white md:mb-6 mb-0 border-b-2 md:border-b-4 w-5 md:w-16">{props.id}</h3>
-                                <div className="lg:text-5xl md:text-3xl text-sm leading-6 text-white md:mb-6 mb-2">{props.name}</div>
-                                <p className="text-white md:text-3xl text-sm capitalize">{props.description}</p>
+                                <h3 className="md:text-3xl text-lg font-bold text-white md:mb-4 mb-0 border-b-2 md:border-b-4 w-5 md:w-16">{props.id}</h3>
+                                <div className="md:text-2xl text-sm leading-6 text-white md:mb-4 mb-2">{props.name}</div>
+                                <p className="text-white md:text-xl text-sm capitalize">{props.description}</p>
                               </div>
                           </div>
                       </div>

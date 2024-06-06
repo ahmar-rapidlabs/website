@@ -7,7 +7,7 @@ import virtualinterior from '../../../assets/works/virtualinterior.png'
 function PortfolioProps() {
   return (
     <>
-    <div className="portfolioPageContainer text-white mx-5 md:mx-14">
+    <div className="portfolioPageContainer text-white mx-5 md:mx-28">
         <div className="heroSectionPortfolio text-white py-10">
             <div className='mb-3'>
               <h1 className='portolio_title text-4xl md:text-6xl capitalize'>Works we have done for our clients</h1>
