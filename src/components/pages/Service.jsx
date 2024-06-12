@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Services from '../ServicesSection'
 import gradientButton from '../button_gradient.module.css'
 import { Link } from 'react-router-dom'
@@ -8,6 +8,9 @@ import LetstalkSection from '../LetstalkSection'
 import AboutusSection from '../AboutusSection'
 import ServicesPage from './ServicesPage'
 function Service() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
     <>
         <div className="our_serivces_main_container mt-16 mb-32">
