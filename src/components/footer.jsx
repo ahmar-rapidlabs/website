@@ -49,7 +49,7 @@ function Footer() {
                             <div className="newsletter-title py-4">
                                 <h2 className='text-white capitalize text-2xl'>Join our Newsletter</h2>
                             </div>
-                            <form action="/commingsoon">
+                            <form action="">
                                 <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                                     <div className="relative w-full">
                                         <label htmlFor="email" className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>

@@ -20,7 +20,7 @@ export default function Main() {
                             <h1 className="max-w-2xl lg:mb-4 mb-2 text-white lg:text-4xl md:text-4xl xs:text-2xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white capitalize">Real Solutions with the power of AI</h1>
                             <p className="max-w-2xl lg:mb-6 mb-4 font-light text-white md:text-lg lg:text-xl dark:text-gray-400">Reach out to us for fast and trusted AI software for your business needs.</p>
                             <Link to="/contact" className={gradientButton.gradientBotton_demo}>
-                                Request Link Demo
+                                Get Started
                             </Link> 
                         </div>
                         <div className="lg:col-span-5 flex justify-center items-start lg:items-center lg:justify-end lg:mt-0 my-6 order-1 lg:order-2">

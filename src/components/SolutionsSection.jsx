@@ -25,53 +25,46 @@ function SolutionsSection() {
                 id='01'
                 name='Computer Vision' 
                 image={sol_compvision} 
-                description="Enable computers to interpret and understand visual information from the world around them, transforming images and videos into actionable data." />
+                description="Allows computers to interpret visual 
+                information from their environment, 
+                producing actionable data." />
                 <SolutionsCard 
                 id='02' 
                 name='Generative AI' 
                 image={sol_gen}
-                description="Creates new content, such as text, 
-                images, music, or code, based on 
-                learning from a vast amount of 
-                existing data." 
+                description="Produces new content like text, images, music, or code by learning from extensive existing data." 
                 />
                 <SolutionsCard 
                 id='03' 
                 name='AI Chatbot' 
                 image={sol_chatbot}
-                description="Software system designed to simulate 
-                human-like conversation with users, 
-                using natural language processing to 
-                understand and respond to queries 
-                automatically."
+                description="Software system that mimics human 
+                conversation by automatically 
+                processing and responding to queries."
                  />
                 <SolutionsCard 
                 id='04' 
                 name='Application Development' 
                 image={sol_appdev}
-                description="Provide tools and frameworks to 
-                design, develop, deploy, and maintain 
-                software applications efficiently and 
-                effectively."
+                description="Provide tools and frameworks for 
+                efficient software development and 
+                maintenance."
                  />
                 <SolutionsCard 
                 id='05'
                 name='AI Industrial Applications' 
                 image={sol_industrial_app} 
-                description="Leverage machine learning, computer 
-                vision, and data analytics to optimize 
-                manufacturing processes, improve 
-                equipment maintenance, and enhance 
-                supply chain efficiency."
+                description="Boost manufacturing, maintenance, 
+                and supply efficiency with AI and 
+                data analytics."
                 />
                 <SolutionsCard 
                 id='06' 
                 name='Financial Services' 
                 image={sol_financial_serv}
-                description="Funding and investment support, 
-                financial risk management, and 
-                tailored financial products and advice 
-                to drive innovation and growth."
+                description="Funding, investment support, and 
+                tailored financial advice to foster 
+                innovation and growth."
                 />
               </div>
             </div>

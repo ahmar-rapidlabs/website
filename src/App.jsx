@@ -12,7 +12,6 @@ import PortfolioProps from './components/pages/portfolio/PortfolioProps'
 import AboutUs from './components/pages/aboutus/AboutUs'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-
 function App() {
   const router = createBrowserRouter([
     {path: '', element: <><Nav /><Main /></>},
