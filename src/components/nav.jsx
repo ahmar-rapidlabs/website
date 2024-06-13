@@ -22,7 +22,7 @@ export default function Nav() {
       <nav className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
-            <img className="h-auto w-32" src={navlogo} alt="" />
+            <img className="h-auto w-44" src={navlogo} alt="" />
             <span className="sr-only">Company Name</span>
           </Link>
         </div>
