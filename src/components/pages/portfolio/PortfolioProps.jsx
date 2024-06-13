@@ -5,10 +5,7 @@ import mentalhealh from '../../../assets/works/mentalhealth2.png'
 import legalbot from '../../../assets/works/legalbot.png'
 import virtualinterior from '../../../assets/works/virtualinterior.png'
 function PortfolioProps() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+  
   return (
     <>
     <div className="portfolioPageContainer text-white mx-5 md:mx-28">

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 function ContactStep2({ selectedCategories, handleChange, additionalCategories }) {
+    
     let otherCheckboxRendered = false;
 
     return (

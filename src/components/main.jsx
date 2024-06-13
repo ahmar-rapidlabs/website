@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 import LetstalkSection from './LetstalkSection'
 import AboutusSection from './AboutusSection'
 export default function Main() {
+    
   return (
     <>
     <div className="main_container">
@@ -58,8 +59,6 @@ export default function Main() {
         <LetstalkSection/>
         {/* About us */}
         <AboutusSection />
-        {/* Footer */}
-        <Footer />
     </>
   )
 }

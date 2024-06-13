@@ -1,37 +1,43 @@
-import { useState } from 'react'
-import './App.css'
-import Nav from './components/nav'
-import Main from './components/main'
-import Footer from './components/footer'
-import Service from './components/pages/Service'
-import ServicesPage from './components/pages/ServicesPage'
-import ContactPage from './components/pages/contact'
-import CommingSoon from './components/pages/CommingSoon'
-import PortfolioItems from './components/pages/portfolio/PortfolioItems'
-import PortfolioProps from './components/pages/portfolio/PortfolioProps'
-import AboutUs from './components/pages/aboutus/AboutUs'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import React, { useEffect } from 'react';
+import './App.css';
+import Nav from './components/nav';
+import Main from './components/main';
+import Footer from './components/footer';
+import Service from './components/pages/Service';
+import ServicesPage from './components/pages/ServicesPage';
+import ContactPage from './components/pages/contact';
+import CommingSoon from './components/pages/CommingSoon';
+import PortfolioProps from './components/pages/portfolio/PortfolioProps';
+import AboutUs from './components/pages/aboutus/AboutUs';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
-function App() {
-  const router = createBrowserRouter([
-    {path: '', element: <><Nav /><Main /></>},
-    {path: '/services', element: <><Nav/><Service/><Footer /></>},
-    {path: '/services/:category', element: <><Nav/><ServicesPage/><Footer /></>},
-    {path: '/contact', element: <><Nav/><ContactPage /><Footer /></>},
-    {path: '/aboutus', element: <><Nav/><AboutUs /><Footer /></>},
-    {path: '/blog', element: <><Nav/><CommingSoon /><Footer /></>},
-    {path: '/portfolio', element: <><Nav/><PortfolioProps /><Footer /></>},
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
 
-  ])
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
+  return null;
+};
+
+const App = () => {
   return (
-    <>
-    <RouterProvider router={router} />
-
-    
-    </>
-  )
+    <Router>
+      <ScrollToTop />
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/services" element={<Service />} />
+        <Route path="/services/:category" element={<ServicesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/blog" element={<CommingSoon />} />
+        <Route path="/portfolio" element={<PortfolioProps />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;

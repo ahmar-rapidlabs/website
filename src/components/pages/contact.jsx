@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ContactStep2 from './contactStep2';
 import axios from 'axios';
 

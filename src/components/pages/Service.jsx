@@ -8,9 +8,7 @@ import LetstalkSection from '../LetstalkSection'
 import AboutusSection from '../AboutusSection'
 import ServicesPage from './ServicesPage'
 function Service() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+    
   return (
     <>
         <div className="our_serivces_main_container mt-16 mb-32">

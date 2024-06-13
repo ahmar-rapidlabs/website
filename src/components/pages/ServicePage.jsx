@@ -6,12 +6,13 @@ import WorkDone from '../WorkDone';
 import { Link } from 'react-router-dom'
 
 function ServicePage(props) {
+    
     return (
         <>
             <div className="individual_service_page_container py-10">
                 <div className="overlay md:mx-14 mx-5">
                     <div className='mb-3'>
-                        <h1 className='service_title text-4xl md:text-6xl'>{props.title}</h1>
+                        <h1 className='service_title text-4xl md:text-6xl pb-5'>{props.title}</h1>
                     </div>
                     <div className=''>
                         <p className='text-xl md:text-3xl'>{props.description}</p>
