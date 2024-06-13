@@ -18,7 +18,6 @@ function App() {
     {path: '/services', element: <><Nav/><Service/><Footer /></>},
     {path: '/services/:category', element: <><Nav/><ServicesPage/><Footer /></>},
     {path: '/contact', element: <><Nav/><ContactPage /><Footer /></>},
-    // {path: '/portfolio', element: <><Nav/><CommingSoon /><Footer /></>},
     {path: '/aboutus', element: <><Nav/><AboutUs /><Footer /></>},
     {path: '/blog', element: <><Nav/><CommingSoon /><Footer /></>},
     {path: '/portfolio', element: <><Nav/><PortfolioProps /><Footer /></>},

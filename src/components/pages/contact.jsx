@@ -22,7 +22,7 @@ function ContactPage() {
         ...prevData,
         selectedCategories: updatedCategories,
       }));
-    } else if (name === 'analyticsRoadmaps' || name === 'dataMining' || name === 'predictivemodel' || name === 'webscrapping' || name === 'other' || name === 'GenerativeAI' || name === 'ComputerVision' || name === 'AIChatbot' || name === 'timeseries' || name === 'other' || name === 'Customwebportals' || name === 'Cloudbasedplatforms' || name === 'APIDevelopment' || name === 'uiuxdev' || name === 'ltTenk' || name === 'ten-tf' || name === 'tf-hund' || name === 'morethanhundred' || name === 'one-to-three' || name === 'three-to-six' || name === 'six-to-oneyr' || name === 'more-oneyr') {
+    } else if (name === 'analyticsRoadmaps' || name === 'dataMining' || name === 'predictivemodel' || name === 'webscrapping' || name === 'other' || name === 'GenerativeAI' || name === 'ComputerVision' || name === 'AIChatbot' || name === 'timeseries' || name === 'other' || name === 'customwebsites' || name === 'CloudApplications' || name === 'APIDevelopment' || name === 'uiuxdev' || name === 'ltTenk' || name === 'ten-tf' || name === 'tf-hund' || name === 'morethanhundred' || name === 'one-to-three' || name === 'three-to-six' || name === 'six-to-oneyr' || name === 'more-oneyr') {
       const updatedAdditionalCategories = checked
         ? [...formData.additionalCategories, value]
         : formData.additionalCategories.filter(category => category !== value);
@@ -47,15 +47,23 @@ function ContactPage() {
   const handleNext = () => {
     let validationErrors = {};
 
-    if (!formData.companyName) {
-      validationErrors.companyName = "Company name is required";
+    if (step === 1) {
+      if (!formData.companyName) {
+        validationErrors.companyName = "Company name is required";
+      }
+      if (!formData.email) {
+        validationErrors.email = "Email is required";
+      } else if (!validateEmail(formData.email)) {
+        validationErrors.email = "Invalid email format";
+      }
+      if (formData.selectedCategories.length === 0) {
+        validationErrors.selectedCategories = "At least one category must be selected";
+      }
+    } else if (step === 2) {
+      if (formData.additionalCategories.length === 0) {
+        validationErrors.additionalCategories = "At least one category must be selected";
+      }
     }
-    if (!formData.email) {
-      validationErrors.email = "Email is required";
-    } else if (!validateEmail(formData.email)) {
-      validationErrors.email = "Invalid email format";
-    }
-
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
@@ -75,6 +83,7 @@ function ContactPage() {
     } catch (error) {
       console.error('Error submitting form:', error);
     }
+    alert("Form Submitted Successfully")
     console.log('Form submitted:', formData);
   };
 
@@ -145,6 +154,7 @@ function ContactPage() {
                       className="hidden peer" 
                       checked={formData.selectedCategories.includes('Artificial Intelligence / Machine Learning')}
                       onChange={handleChange}
+                      required
                     />
                     <label htmlFor="ai-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
                       <div className="block">
@@ -161,6 +171,8 @@ function ContactPage() {
                       className="hidden peer" 
                       checked={formData.selectedCategories.includes('Data Analysis')}
                       onChange={handleChange}
+                      required
+
                     />
                     <label htmlFor="data-analysis-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">                           
                       <div className="block">
@@ -177,6 +189,8 @@ function ContactPage() {
                       className="hidden peer" 
                       checked={formData.selectedCategories.includes('Full Stack Development')}
                       onChange={handleChange}
+                      required
+                      
                     />
                     <label htmlFor="full-stack-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">                           
                       <div className="block">
@@ -193,6 +207,8 @@ function ContactPage() {
                       className="hidden peer" 
                       checked={formData.selectedCategories.includes('other')}
                       onChange={handleChange}
+                      required
+
                     />
                     <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">                           
                       <div className="block">
@@ -201,11 +217,13 @@ function ContactPage() {
                     </label>
                   </div>
                 </div>
+                {errors.selectedCategories && <p className="text-red-500 text-sm mt-2">{errors.selectedCategories}</p>}
+
               </div>
 
               <div className="nextBtn flex justify-center px-10 md:px-0 md:justify-end md:mr-20 mt-14">
                 <button
-                  disabled={!formData.selectedCategories.length}
+                  // disabled={!formData.selectedCategories.length}
                   onClick={handleNext}
                   className="w-full md:w-auto bg-indigo-600 hover:bg-indigo-800 text-white font-semibold py-4 text-xl px-16 rounded"
                 > Next 
@@ -220,6 +238,7 @@ function ContactPage() {
                 additionalCategories={formData.additionalCategories}
                 handleChange={handleChange} 
               />
+              {errors.additionalCategories && <p className="text-red-500 text-sm mt-2 text-center">{errors.additionalCategories}</p>}
               <div className="next_prev_btn flex justify-between md:gap-0 gap-3 mt-14 px-4 md:px-0 md:mx-20">
                 <button onClick={handlePrevious} className="md:w-auto w-full bg-indigo-600 hover:bg-indigo-800 text-white text-lg font-semibold py-4 md:py-2 px-16 md:px-10 rounded">
                   Previous
