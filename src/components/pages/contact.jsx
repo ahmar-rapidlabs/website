@@ -83,7 +83,7 @@ function ContactPage() {
     } catch (error) {
       console.error('Error submitting form:', error);
     }
-    alert("Form Submitted Successfully")
+    // alert("Information Submitted. We will contact you soon!")
     console.log('Form submitted:', formData);
   };
 
@@ -267,12 +267,15 @@ function ContactPage() {
                     onChange={handleChange}
                   ></textarea>
                 </div>
-                <button onClick={handlePrevious} className="md:w-auto w-full mt-4 md:mt-6 bg-indigo-600 hover:bg-indigo-800 text-white text-lg font-semibold md:py-4 md:px-10 p-2.5 md:rounded rounded-md">
-                  Previous
-                </button>
-                <div className="submit-btn flex justify-center">
-                  <button type="submit" className="w-2/4 mt-4 h-12 px-6 text-white transition-colors font-semibold duration-150 text-lg bg-indigo-600 rounded-md focus:shadow-outline hover:bg-indigo-800">Submit</button>
+                <div className="prev-submit-mobileview flex md:block justify-between">
+                    <button onClick={handlePrevious} className="md:w-auto mt-4 md:mt-6 bg-indigo-600 hover:bg-indigo-800 text-white text-lg font-semibold md:py-4 md:px-10 px-6 p-2.5 md:rounded rounded-md">
+                      Previous
+                    </button>
+                    <div className="submit-btn flex justify-center">
+                      <button type="submit" className="md:w-2/4 w-full mt-4 h-12 px-6 text-white transition-colors font-semibold duration-150 text-lg bg-indigo-600 rounded-md focus:shadow-outline hover:bg-indigo-800">Submit</button>
+                    </div>
                 </div>
+
               </div>
             </>
           )}
