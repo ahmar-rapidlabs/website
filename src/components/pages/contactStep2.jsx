@@ -23,7 +23,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                     checked={additionalCategories.includes('Analytics Roadmaps')}
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="analytics-roadmaps-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                <label htmlFor="analytics-roadmaps-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                     <div className="block">
                                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Analytics Roadmaps</div>
                                     </div>
@@ -39,7 +39,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                     checked={additionalCategories.includes('Data Mining')}
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="data-mining-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                <label htmlFor="data-mining-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                     <div className="block">
                                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Data Mining</div>
                                     </div>
@@ -56,7 +56,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
 
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="predictive-model-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                <label htmlFor="predictive-model-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                     <div className="block">
                                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Predictive Model</div>
                                     </div>
@@ -73,7 +73,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                     className="hidden peer"
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="webscrapping-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                <label htmlFor="webscrapping-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                     <div className="block">
                                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Web Scrapping</div>
                                     </div>
@@ -91,7 +91,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                         className="hidden peer"
                                         onChange={handleChange}
                                     />
-                                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                         <div className="block">
                                             <div className="w-full text-sm text-nowrap md:text-md font-normal">Other</div>
                                         </div>
@@ -113,7 +113,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                     className="hidden peer"
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="GenerativeAI" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                <label htmlFor="GenerativeAI" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                     <div className="block">
                                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Generative AI</div>
                                     </div>
@@ -130,7 +130,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                     className="hidden peer"
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="ComputerVision" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                <label htmlFor="ComputerVision" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                     <div className="block">
                                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Computer Vision</div>
                                     </div>
@@ -147,7 +147,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                     className="hidden peer"
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="AIChatbot" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                <label htmlFor="AIChatbot" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                     <div className="block">
                                         <div className="w-full text-sm text-nowrap md:text-md font-normal">AI Chatbot</div>
                                     </div>
@@ -164,7 +164,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
 
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="timeseries" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                <label htmlFor="timeseries" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                     <div className="block">
                                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Time Series</div>
                                     </div>
@@ -182,7 +182,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                         className="hidden peer"
                                         onChange={handleChange}
                                     />
-                                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                         <div className="block">
                                             <div className="w-full text-sm text-nowrap md:text-md font-normal">Other</div>
                                         </div>
@@ -204,7 +204,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
 
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="customwebsites" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                <label htmlFor="customwebsites" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                     <div className="block">
                                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Custom websites</div>
                                     </div>
@@ -221,7 +221,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                     className="hidden peer"
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="CloudApplications" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                <label htmlFor="CloudApplications" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                     <div className="block">
                                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Cloud Applications</div>
                                     </div>
@@ -238,7 +238,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                     className="hidden peer"
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="APIDevelopment" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                <label htmlFor="APIDevelopment" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                     <div className="block">
                                         <div className="w-full text-sm text-nowrap md:text-md font-normal">API Development</div>
                                     </div>
@@ -255,7 +255,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
 
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="uiuxdev" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                <label htmlFor="uiuxdev" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                     <div className="block">
                                         <div className="w-full text-sm text-nowrap md:text-md font-normal">UI/UX Development</div>
                                     </div>
@@ -273,7 +273,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                         className="hidden peer"
                                         onChange={handleChange}
                                     />
-                                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                         <div className="block">
                                             <div className="w-full text-sm text-nowrap md:text-md font-normal">Other</div>
                                         </div>
@@ -302,7 +302,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                 
                                 onChange={handleChange}
                             />
-                            <label htmlFor="less_then_tenk" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                            <label htmlFor="less_then_tenk" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                 <div className="block">
                                     <div className="w-full text-sm text-nowrap md:text-md font-normal">&#60; $10,000</div>
                                 </div>
@@ -320,7 +320,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                 
                                 onChange={handleChange}
                             />
-                            <label htmlFor="ten-to-twentyfive" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                            <label htmlFor="ten-to-twentyfive" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                 <div className="block">
                                     <div className="w-full text-sm text-nowrap md:text-md font-normal">$10,000 - $25,000</div>
                                 </div>
@@ -338,7 +338,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                 
                                 onChange={handleChange}
                             />
-                            <label htmlFor="twentyfive-to-hundred" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                            <label htmlFor="twentyfive-to-hundred" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                 <div className="block">
                                     <div className="w-full text-sm text-nowrap md:text-md font-normal">$25,000 - $100,000</div>
                                 </div>
@@ -356,7 +356,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                 
                                 onChange={handleChange}
                             />
-                            <label htmlFor="morethanhundred" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                            <label htmlFor="morethanhundred" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                 <div className="block">
                                     <div className="w-full text-sm text-nowrap md:text-md font-normal">$100,000 +</div>
                                 </div>
@@ -386,7 +386,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                 
                                 onChange={handleChange}
                             />
-                            <label htmlFor="one-to-three" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                            <label htmlFor="one-to-three" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                 <div className="block">
                                     <div className="w-full text-sm text-nowrap md:text-md font-normal">1-3 months</div>
                                 </div>
@@ -404,7 +404,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                 
                                 onChange={handleChange}
                             />
-                            <label htmlFor="three-to-six" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                            <label htmlFor="three-to-six" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                 <div className="block">
                                     <div className="w-full text-sm text-nowrap md:text-md font-normal">3-6 months</div>
                                 </div>
@@ -422,7 +422,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                 
                                 onChange={handleChange}
                             />
-                            <label htmlFor="six-to-oneyr" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                            <label htmlFor="six-to-oneyr" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                 <div className="block">
                                     <div className="w-full text-sm text-nowrap md:text-md font-normal">6 months to 1 year</div>
                                 </div>
@@ -439,7 +439,7 @@ function ContactStep2({ selectedCategories, handleChange, additionalCategories }
                                 
                                 onChange={handleChange}
                             />
-                            <label htmlFor="more-oneyr" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                            <label htmlFor="more-oneyr" className="bg-zinc-600 inline-flex items-center justify-between w-full md:py-5 md:px-9 py-3 px-7 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                                 <div className="block">
                                     <div className="w-full text-sm text-nowrap md:text-md font-normal">More than 1 year</div>
                                 </div>

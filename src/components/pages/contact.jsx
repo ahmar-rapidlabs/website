@@ -156,7 +156,7 @@ function ContactPage() {
                       onChange={handleChange}
                       required
                     />
-                    <label htmlFor="ai-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">
+                    <label htmlFor="ai-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                       <div className="block">
                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Artificial Intelligence / Machine Learning</div>
                       </div>
@@ -174,9 +174,9 @@ function ContactPage() {
                       required
 
                     />
-                    <label htmlFor="data-analysis-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">                           
+                    <label htmlFor="data-analysis-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">                           
                       <div className="block">
-                        <div className="w-full text-sm text-nowrap md:text-md font-normal">Data Analysis</div>
+                        <div className="w-full text-sm text-nowrap md:text-md font-normal">Data Analytics</div>
                       </div>
                     </label>
                   </div>
@@ -192,7 +192,7 @@ function ContactPage() {
                       required
                       
                     />
-                    <label htmlFor="full-stack-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">                           
+                    <label htmlFor="full-stack-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">                           
                       <div className="block">
                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Full Stack Development</div>
                       </div>
@@ -210,7 +210,7 @@ function ContactPage() {
                       required
 
                     />
-                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600 hover:bg-indigo-900">                           
+                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">                           
                       <div className="block">
                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Other</div>
                       </div>
