@@ -74,17 +74,31 @@ function ContactPage() {
   const handlePrevious = () => {
     setStep(prevStep => prevStep - 1);
   };
+  const [message, setMessage] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await axios.post('http://127.0.0.1:8000/send-email/', formData);
       console.log('Form submitted successfully');
+      setMessage('Information Submitted. We will contact you soon!');
+      setFormData({
+        companyName: '',
+        email: '',
+        selectedCategories: [],
+        additionalCategories: [],
+        message: '',
+      });
+      setShowAlert(true);  // Set showAlert to true to show the alert
     } catch (error) {
       console.error('Error submitting form:', error);
     }
-    // alert("Information Submitted. We will contact you soon!")
     console.log('Form submitted:', formData);
+  };
+
+  const handleCloseAlert = () => {
+    setShowAlert(false);
   };
 
   return (
@@ -106,6 +120,7 @@ function ContactPage() {
 
 
       <div className='text-white'>
+
         <form onSubmit={handleSubmit}>
           {step === 1 && (
             <>
@@ -146,12 +161,12 @@ function ContactPage() {
                 </div>
                 <div className="select-tect-categ flex flex-wrap gap-4 mt-3">
                   <div className="tect-categ-1">
-                    <input 
+                    <input
                       type="checkbox"
-                      name='isCheckedAI' 
-                      id="ai-option" 
-                      value="Artificial Intelligence / Machine Learning" 
-                      className="hidden peer" 
+                      name='isCheckedAI'
+                      id="ai-option"
+                      value="Artificial Intelligence / Machine Learning"
+                      className="hidden peer"
                       checked={formData.selectedCategories.includes('Artificial Intelligence / Machine Learning')}
                       onChange={handleChange}
                       required
@@ -163,54 +178,54 @@ function ContactPage() {
                     </label>
                   </div>
                   <div className="tect-categ-2">
-                    <input 
-                      type="checkbox" 
-                      id="data-analysis-option" 
+                    <input
+                      type="checkbox"
+                      id="data-analysis-option"
                       name='isCheckedDataAnalysis'
                       value="Data Analysis"
-                      className="hidden peer" 
+                      className="hidden peer"
                       checked={formData.selectedCategories.includes('Data Analysis')}
                       onChange={handleChange}
                       required
 
                     />
-                    <label htmlFor="data-analysis-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">                           
+                    <label htmlFor="data-analysis-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                       <div className="block">
                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Data Analytics</div>
                       </div>
                     </label>
                   </div>
                   <div className="tect-categ-3">
-                    <input 
-                      type="checkbox" 
-                      id="full-stack-option" 
+                    <input
+                      type="checkbox"
+                      id="full-stack-option"
                       name='isCheckedFullStack'
-                      value="Full Stack Development" 
-                      className="hidden peer" 
+                      value="Full Stack Development"
+                      className="hidden peer"
                       checked={formData.selectedCategories.includes('Full Stack Development')}
                       onChange={handleChange}
                       required
-                      
+
                     />
-                    <label htmlFor="full-stack-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">                           
+                    <label htmlFor="full-stack-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                       <div className="block">
                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Full Stack Development</div>
                       </div>
                     </label>
                   </div>
                   <div className="tect-categ-4">
-                    <input 
-                      type="checkbox" 
-                      id="other-option" 
+                    <input
+                      type="checkbox"
+                      id="other-option"
                       name='isCheckedOther'
                       value="other"
-                      className="hidden peer" 
+                      className="hidden peer"
                       checked={formData.selectedCategories.includes('other')}
                       onChange={handleChange}
                       required
 
                     />
-                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">                           
+                    <label htmlFor="other-option" className="bg-zinc-600 inline-flex items-center justify-between w-full py-5 px-9 text-white rounded-xl cursor-pointer peer-checked:bg-indigo-600">
                       <div className="block">
                         <div className="w-full text-sm text-nowrap md:text-md font-normal">Other</div>
                       </div>
@@ -226,17 +241,17 @@ function ContactPage() {
                   // disabled={!formData.selectedCategories.length}
                   onClick={handleNext}
                   className="w-full md:w-auto bg-indigo-600 hover:bg-indigo-800 text-white font-semibold py-4 text-xl px-16 rounded"
-                > Next 
+                > Next
                 </button>
               </div>
             </>
           )}
           {step === 2 && (
             <div>
-              <ContactStep2 
-                selectedCategories={formData.selectedCategories} 
+              <ContactStep2
+                selectedCategories={formData.selectedCategories}
                 additionalCategories={formData.additionalCategories}
-                handleChange={handleChange} 
+                handleChange={handleChange}
               />
               {errors.additionalCategories && <p className="text-red-500 text-sm mt-2 text-center">{errors.additionalCategories}</p>}
               <div className="next_prev_btn flex justify-between md:gap-0 gap-3 mt-14 px-4 md:px-0 md:mx-20">
@@ -247,34 +262,46 @@ function ContactPage() {
                   disabled={!formData.selectedCategories.length}
                   onClick={handleNext}
                   className="bg-indigo-600 md:w-auto w-full hover:bg-indigo-800 text-white font-semibold py-4 text-lg px-16 rounded"
-                > Next 
+                > Next
                 </button>
               </div>
             </div>
           )}
           {step === 3 && (
             <>
+
+
               <div className='md:mx-28 mx-10'>
+                {showAlert && (
+                  <div className="fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-50">
+                    <div className="bg-white p-4 rounded-lg shadow-lg">
+                      <p className="text-black">{message}</p>
+                      <button onClick={handleCloseAlert} className="mt-4 text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Close</button>
+                    </div>
+                  </div>
+                )}
                 <div className="chatarea">
                   <label htmlFor="message" className="block mb-4 text-3xl text-white">Your message</label>
-                  <textarea 
-                    id="message" 
-                    name="message" 
-                    rows="10" 
-                    className="block bg-transparent p-2.5 w-full text-lg text-white border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="10"
+                    className="block bg-transparent p-2.5 w-full text-lg text-white border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="Leave a comment..."
                     value={formData.message}
                     onChange={handleChange}
                   ></textarea>
                 </div>
                 <div className="prev-submit-mobileview flex md:block justify-between">
-                    <button onClick={handlePrevious} className="md:w-auto mt-4 md:mt-6 bg-indigo-600 hover:bg-indigo-800 text-white text-lg font-semibold md:py-4 md:px-10 px-6 p-2.5 md:rounded rounded-md">
-                      Previous
-                    </button>
-                    <div className="submit-btn flex justify-center">
-                      <button type="submit" className="md:w-2/4 w-full mt-4 h-12 px-6 text-white transition-colors font-semibold duration-150 text-lg bg-indigo-600 rounded-md focus:shadow-outline hover:bg-indigo-800">Submit</button>
-                    </div>
+                  <button onClick={handlePrevious} className="md:w-auto mt-4 md:mt-6 bg-indigo-600 hover:bg-indigo-800 text-white text-lg font-semibold md:py-4 md:px-10 px-6 p-2.5 md:rounded rounded-md">
+                    Previous
+                  </button>
+                  <div className="submit-btn flex justify-center">
+                    <button type="submit" className="md:w-2/4 w-full mt-4 h-12 px-6 text-white transition-colors font-semibold duration-150 text-lg bg-indigo-600 rounded-md focus:shadow-outline hover:bg-indigo-800">Submit</button>
+                  </div>
                 </div>
+
+
 
               </div>
             </>
