@@ -6,25 +6,26 @@ import Footer from './components/footer';
 import Service from './components/pages/Service';
 import ServicesPage from './components/pages/ServicesPage';
 import ContactPage from './components/pages/contact';
-import CommingSoon from './components/pages/CommingSoon';
+// import CommingSoon from './components/pages/CommingSoon';
+import Pixee from './components/pages/Blogs/pixee'
 import PortfolioProps from './components/pages/portfolio/PortfolioProps';
 import AboutUs from './components/pages/aboutus/AboutUs';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
+// const ScrollToTop = () => {
+//   const { pathname } = useLocation();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, [pathname]);
 
-  return null;
-};
+//   return null;
+// };
 
 const App = () => {
   return (
     <Router>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Nav />
       <Routes>
         <Route path="/" element={<Main />} />
@@ -32,7 +33,7 @@ const App = () => {
         <Route path="/services/:category" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/blog" element={<CommingSoon />} />
+        <Route path="/blog" element={<Pixee />} />
         <Route path="/portfolio" element={<PortfolioProps />} />
       </Routes>
       <Footer />
