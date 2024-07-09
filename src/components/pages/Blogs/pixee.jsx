@@ -72,7 +72,7 @@ const Parameterize_SQL_Queries_Response =
                     </div>
                     <div className="banner_content mt-10 w-full max-w-6xl">
                         <p className='mb-3'>
-                            In the world of software development, the only truly scalable solution for maintaining secure code is to have a security expert on every development team. These experts can harden code and fix vulnerabilities as quickly as developers produce it. However, the reality is that there simply aren't enough individuals with the deep understanding of security risks and coding practices required to fill these roles. At Rapid Labs, we faced this challenge head-on. Confronted with a critical security breach that could have compromised our application, we turned to Pixee.ai. With our commitment to delivering robust and secure solutions, we found Pixeebot a reliable and efficient code security tool that steps in as our virtual product security engineer, always present and proactively hardening our code. It advises on pull requests and responds to scans that detect vulnerabilities. Unlike traditional tools that generate extensive reports, Pixeebot communicates directly in code and provides actionable insights and solutions.
+                            In the world of software development, the only truly scalable solution for maintaining secure code is to have a security expert on every development team. These experts can harden code and fix vulnerabilities as quickly as developers produce it. However, the reality is that there simply aren't enough individuals with the deep understanding of security risks and coding practices required to fill these roles. At Rapid Labs, we faced this challenge head-on. Confronted with a critical security breach that could have compromised our application, we turned to <a href="https://www.pixee.ai/" className='text-blue-600 dark:text-blue-500 hover:underline'>Pixee.ai</a>. With our commitment to delivering robust and secure solutions, we found Pixeebot a reliable and efficient code security tool that steps in as our virtual product security engineer, always present and proactively hardening our code. It advises on pull requests and responds to scans that detect vulnerabilities. Unlike traditional tools that generate extensive reports, Pixeebot communicates directly in code and provides actionable insights and solutions.
                         </p>
                         <h2 className='text-2xl font-semibold mb-2'>
                             The Power of Pixeebot: Your Virtual Security Engineer
@@ -84,7 +84,7 @@ const Parameterize_SQL_Queries_Response =
                             Real-World Applications at Rapid Labs
                         </h2>
                         <p className='mb-3'>
-                            We have integrated Pixee into our Rapid Labs GitHub and applied it to our two active python projects: Cardio-Chatbot and CRM. The CRM project focuses on developing a comprehensive customer relationship management system to meet our specific business needs. Conversely, the Cardio Chatbot project aims to create an AI-driven chatbot to assist patients in monitoring cardiovascular health, providing personalized advice, and facilitating appointment scheduling. Both projects are currently in active development on GitHub.
+                            We have integrated Pixee into our Rapid Labs GitHub and applied it to our two active python projects: <a href="https://github.com/ahmar-rapidlabs/Cardio-Chatbot/" className='text-blue-600 dark:text-blue-500 hover:underline'>Cardio-Chatbot</a> and <a href="https://github.com/ahmar-rapidlabs/CRM" className='text-blue-600 dark:text-blue-500 hover:underline'>CRM</a>. The CRM project focuses on developing a comprehensive customer relationship management system to meet our specific business needs. Conversely, the Cardio Chatbot project aims to create an AI-driven chatbot to assist patients in monitoring cardiovascular health, providing personalized advice, and facilitating appointment scheduling. Both projects are currently in active development on GitHub.
                         </p>
                         <h2 className='text-2xl font-semibold mb-2'>
                             Initial Application Security Efforts and the Need for Evolution
@@ -93,7 +93,7 @@ const Parameterize_SQL_Queries_Response =
                             At Rapid Labs, our initial application security efforts were limited. Before integrating  Pixee.ai, we relied heavily on manual code reviews, and basic static analysis tools to identify and  address security issues. While these methods provided a baseline level of security, they were time-consuming, prone to human error, and often missed some vulnerabilities.
                         </p>
                         <p className='mb-1'>
-                            To automate our manual efforts, we used the SonarCloud for static code analysis.  SonarCloud helped us identify some code smells, bugs, and vulnerabilities, but it had its  limitations. One major drawback was that SonarCloud did not automatically generate pull  requests and fix issues when it found vulnerabilities. Instead, our developers had to sift through  extensive reports to pinpoint actionable insights and manually create pull requests to address  the issues, which added to their workload and slowed down the development process.
+                            To automate our manual efforts, we used the <a href="https://www.sonarsource.com/products/sonarcloud/" className='text-blue-600 dark:text-blue-500 hover:underline'>SonarCloud</a> for static code analysis.  SonarCloud helped us identify some code smells, bugs, and vulnerabilities, but it had its  limitations. One major drawback was that SonarCloud did not automatically generate pull  requests and fix issues when it found vulnerabilities. Instead, our developers had to sift through  extensive reports to pinpoint actionable insights and manually create pull requests to address  the issues, which added to their workload and slowed down the development process.
                         </p>
                         <p className='mb-3'>
                             Despite these efforts, we recognized that our approach was not scalable and left room for  significant improvement. We needed a more automated and efficient solution to ensure our  code remained secure and high-quality without overburdening our development team.
@@ -109,7 +109,7 @@ const Parameterize_SQL_Queries_Response =
                         </h2>
                         <div className="para mb-3">
                             <p className='mb-3'>
-                                The installation of Pixee.ai in our GitHub repository was straightforward. Here are the steps we followed:
+                                The <a href="https://docs.pixee.ai/installing/" className='text-blue-600 dark:text-blue-500 hover:underline'>installation</a> of Pixee.ai in our GitHub repository was straightforward. Here are the steps we followed:
                             </p>
                             <div className="installation_steps_list">
                                 <ol className='mt-1'>
@@ -159,7 +159,7 @@ const Parameterize_SQL_Queries_Response =
                             Integration Process
                         </h2>
                         <p>
-                            We configured GitHub actions to enable the Pixee Sonar <a href="" className='text-blue-600 dark:text-blue-500 hover:underline'>Upload Action</a> on our projects by  creating a new GitHub workflow action in our repositories. You can see the example <a href="" className='text-blue-600 dark:text-blue-500 hover:underline'>here</a>.
+                            We configured GitHub actions to enable the Pixee Sonar <a href="https://github.com/marketplace/actions/upload-tool-results-to-pixeebot" className='text-blue-600 dark:text-blue-500 hover:underline'>Upload Action</a> on our projects by  creating a new GitHub workflow action in our repositories. You can see the example <a href=" https://github.com/pixee/codemodder-python/blob/main/.github/workflows/sonar_pixee.yml" className='text-blue-600 dark:text-blue-500 hover:underline'>here</a>.
                         </p>
                         <div className="Integration_process_snippet mb-3 ">
                             <SyntaxHighlighter language='yaml' style={dracula}>
@@ -174,7 +174,7 @@ const Parameterize_SQL_Queries_Response =
                                 Results and Findings
                             </h2>
                             <p>
-                                The integration of Pixee.ai had a profound impact on our code security. The automated pull  requests addressed critical hotspots and code smells, leading to a more secure and  maintainable codebase. The collaboration between Pixee.ai and SONAR cloud ensured  comprehensive coverage of security issues, both at the surface level and deeper within the  code. The table below shows some of the issues discovered using these tools during our  development process.
+                                The integration of Pixee.ai had a profound impact on our code security. The automated pull  requests addressed critical hotspots and code smells, leading to a more secure and  maintainable codebase. The collaboration between Pixee.ai and SonarCloud ensured  comprehensive coverage of security issues, both at the surface level and deeper within the  code. The table below shows some of the issues discovered using these tools during our  development process.
                             </p>
                             <div className="flex flex-col">
                                 <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -298,18 +298,18 @@ const Parameterize_SQL_Queries_Response =
                         </div>
                         <div className="deep_details">
                             <p className='text-lg mb-1.5'>In our Cardio-Chatbot repository: </p>
-                            <p>Pixeebot detected an issue titled "Harden <code>`pickle.load()`</code> against deserialization attacks" and  opened a new PR (#5) to address it. The bot highlighted that Python's pickle module is  notoriously insecure because it can execute arbitrary code when loading data, making it unsafe  to use with untrusted sources. To mitigate this risk, Pixeebot recommended avoiding pickle and  using safer serialization formats like JSON or YAML. However, if pickle must be used, Pixeebot  suggested using the fickling library, a safer alternative that validates data before loading it. Although this PR and fix were correct and addressed the issue, given our team's priorities on improving the ML models, we have closed it for now. We may revisit it in the future.</p>
+                            <p>Pixeebot detected an issue titled "Harden <code>`pickle.load()`</code> against deserialization attacks" and  opened a new PR (<a href='https://github.com/ahmar-rapidlabs/Cardio-Chatbot/pull/5' className='text-blue-600 dark:text-blue-500 hover:underline'>#5</a>) to address it. The bot highlighted that Python's pickle module is  notoriously insecure because it can execute arbitrary code when loading data, making it unsafe  to use with untrusted sources. To mitigate this risk, Pixeebot recommended avoiding pickle and  using safer serialization formats like JSON or YAML. However, if pickle must be used, Pixeebot  suggested using the fickling library, a safer alternative that validates data before loading it. Although this PR and fix were correct and addressed the issue, given our team's priorities on improving the ML models, we have closed it for now. We may revisit it in the future.</p>
                             <div className="pickle_code">
                                 <SyntaxHighlighter language='python' style={dracula}>
                                     {pickle_change}
                                 </SyntaxHighlighter>
                             </div>
                             <p className='mb-3'>
-                                Pixeebot's codemod automatically replaced calls to <code>`pickle.load()`</code> with <code>`fickling.load()`</code> in the Python  code and added the necessary import statement for fickling.
+                                Pixeebot's <a href="https://docs.pixee.ai/codemods/overview/" className='text-blue-600 dark:text-blue-500 hover:underline'>codemod</a> automatically replaced calls to <code>`pickle.load()`</code> with <code>`fickling.load()`</code> in the Python  code and added the necessary import statement for fickling.
                             </p>
                             <p className='text-lg mb-1.5'>In our CRM repository: </p>
                             <p>
-                                SonarCloud identified two security hotspots in pull request (#18) in our CRM, prompting  Pixeebot to open a new pull request (#19) "Hardening Suggestions for CRM / dev_security." These hotspots were related to enabling Jinja2 autoescape. According to Sonar rule  <code>`python:S5247`</code>, the default behavior of Jinja2 is to not autoescape HTML content when  rendering templates, making applications potentially vulnerable to Cross-Site Scripting (XSS)  attacks. Pixeebot's codemod addressed this by enabling autoescaping in Jinja2, thereby  mitigating the risk of XSS vulnerabilities and enhancing the security of our application.
+                                SonarCloud identified two security hotspots in pull request (<a href="https://github.com/ahmar-rapidlabs/CRM/pull/18" className='text-blue-600 dark:text-blue-500 hover:underline'>#18</a>) in our CRM, prompting  Pixeebot to open a new pull request (<a href="https://github.com/ahmar-rapidlabs/CRM/pull/18" className='text-blue-600 dark:text-blue-500 hover:underline'>#19</a>) "Hardening Suggestions for CRM / dev_security." These hotspots were related to enabling Jinja2 autoescape. According to Sonar rule  <code>`python:S5247`</code>, the default behavior of Jinja2 is to not autoescape HTML content when  rendering templates, making applications potentially vulnerable to Cross-Site Scripting (XSS)  attacks. Pixeebot's codemod addressed this by enabling autoescaping in Jinja2, thereby  mitigating the risk of XSS vulnerabilities and enhancing the security of our application.
                             </p>
                             <div className="jinja">
                                 <SyntaxHighlighter language='python' style={dracula}>
@@ -317,12 +317,12 @@ const Parameterize_SQL_Queries_Response =
                                 </SyntaxHighlighter>
                             </div>
                             <p>
-                                We reviewed the hardening suggestions made by Pixeebot in PR (#19), found them beneficial,  and subsequently merged the changes into our main branch. After merging, Pixeebot deleted  the branch to keep our repository clean and organized.
+                                We reviewed the hardening suggestions made by Pixeebot in PR (<a href='https://github.com/ahmar-rapidlabs/Cardio-Chatbot/pull/19' className='text-blue-600 dark:text-blue-500 hover:underline'>#19</a>), found them beneficial,  and subsequently merged the changes into our main branch. After merging, Pixeebot deleted  the branch to keep our repository clean and organized.
                             </p>
                         </div>
                         <div className="more_details mt-4">
                             <p>
-                                Furthermore, SonarCloud identified two security hotspots and assigned an E security rating to new code in PR  (#12). These code snippets can be a potential threat for code secuirty:
+                                Furthermore, SonarCloud identified two security hotspots and assigned an E security rating to new code in PR  (<a href='https://github.com/ahmar-rapidlabs/Cardio-Chatbot/pull/12' className='text-blue-600 dark:text-blue-500 hover:underline'>#12</a>). These code snippets can be a potential threat for code secuirty:
                             </p>
                             <div className="Parameterize_SQL_Queries_Code">
                                 <SyntaxHighlighter language='python' style={dracula}>
@@ -330,7 +330,7 @@ const Parameterize_SQL_Queries_Response =
                                 </SyntaxHighlighter>
                             </div>
                             <p>
-                                In response, Pixeebot opened a new PR (#13) to address these issues. The hotspots were  related to the need to parameterize SQL queries, as per Sonar rule <code>pythonsecurity:S3649</code>.  Pixeebot's codemod refactored SQL statements to be parameterized rather than built by hand.
+                                In response, Pixeebot opened a new PR (<a href="https://github.com/ahmar-rapidlabs/Cardio-Chatbot/pull/13" className='text-blue-600 dark:text-blue-500 hover:underline'>#13</a>) to address these issues. The hotspots were  related to the need to parameterize SQL queries, as per Sonar rule <code>pythonsecurity:S3649</code>.  Pixeebot's codemod refactored SQL statements to be parameterized rather than built by hand.
                             </p>
                             <div className="Parameterize_SQL_Queries_Code_Response">
                                 <SyntaxHighlighter language='python' style={dracula}>
@@ -348,7 +348,7 @@ const Parameterize_SQL_Queries_Response =
                             During the implementation, we encountered a few challenges:
                             <div className="challenges_list mt-1.5">
                                 <ul className='space-y-1.5 list-disc list-inside'>
-                                    <li><i>Initially, there were conflicts between Pixee.ai and SONAR cloud settings, which were  resolved by fine-tuning the configuration and installing SONAR cloud in GitHub Actions.</i></li>
+                                    <li><i>Initially, there were conflicts between Pixee.ai and SonarCloud settings, which were  resolved by fine-tuning the configuration and installing SonarCloud in GitHub Actions.</i></li>
                                     <li><i>Some findings were false positives, which required manual verification and adjustment  of the analysis rules</i></li>
                                 </ul>
                             </div>
@@ -361,7 +361,7 @@ const Parameterize_SQL_Queries_Response =
                             <div className="sucess_list">
                                 <ul className='space-y-1.5 list-disc list-inside'>
                                     <li><i>The automation of pull requests significantly reduced the time spent on manual code  reviews which increased overall development efficiency.</i></li>
-                                    <li><i>The combination of Pixee.ai and SONAR cloud led to a noticeable improvement in code  quality and security.</i></li>
+                                    <li><i>The combination of Pixee.ai and SonarCloud led to a noticeable improvement in code  quality and security.</i></li>
                                     <li><i>The tools provided continuous monitoring and improvement of the codebase to ensure  long term security benefits.</i></li>
                                 </ul>
                             </div>
@@ -371,12 +371,12 @@ const Parameterize_SQL_Queries_Response =
                                 Wrapping it all up
                             </h2>
                             <p>
-                                Integrating Pixee.ai into our Rapid Labs CRM and Cardio-Chatbot project has been a  transformative experience. The automation of pull requests and the comprehensive analysis  provided by SONAR cloud have significantly enhanced our code security and quality. This  combination has not only streamlined our development process but also ensured that our  codebase remains robust and secure.
+                                Integrating Pixee.ai into our Rapid Labs CRM and Cardio-Chatbot project has been a  transformative experience. The automation of pull requests and the comprehensive analysis  provided by SonarCloud have significantly enhanced our code security and quality. This  combination has not only streamlined our development process but also ensured that our  codebase remains robust and secure.
                             </p>
                             <p className='my-1.5'>
                                 Moreover, we have set a new standard for our appsec efforts by demonstrating the power of  automation in modern software development. We look forward to continuing our journey with  Pixee.ai and exploring further innovations to maintain the highest standards of code excellence. </p>
                             <p>
-                                In summary, Pixee.ai has been an invaluable addition to our Rapid Labs CRM project. Its ability  to automatically detect and fix code issues, along with the detailed analysis from SONAR Cloud,  has greatly improved our code security and development process. We highly recommend  Pixee.ai to any development team looking to enhance their code quality and security through  automation.
+                                In summary, Pixee.ai has been an invaluable addition to our Rapid Labs CRM project. Its ability  to automatically detect and fix code issues, along with the detailed analysis from SonarCloud,  has greatly improved our code security and development process. We highly recommend  Pixee.ai to any development team looking to enhance their code quality and security through  automation.
                             </p>
                         </div>
                     </div>
