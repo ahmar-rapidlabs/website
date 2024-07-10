@@ -41,7 +41,7 @@ export default function Nav() {
           <NavLink to="/services" onClick={closeMobileMenu} isActive={location.pathname === '/services'}>Services</NavLink>
           <NavLink to="/portfolio" onClick={closeMobileMenu} isActive={location.pathname === '/portfolio'}>Portfolio</NavLink>
           <NavLink to="/aboutus" onClick={closeMobileMenu} isActive={location.pathname === '/aboutus'}>About us</NavLink>
-          <NavLink to="/blog" onClick={closeMobileMenu} isActive={location.pathname === '/blog'}>Blog</NavLink>
+          <NavLink to="/blog/devsecops/1" onClick={closeMobileMenu} isActive={location.pathname === '/blog/devsecops/1'}>Blog</NavLink>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link to="/contact" className={simpleButton.simpleButton} onClick={closeMobileMenu}>
@@ -77,7 +77,7 @@ export default function Nav() {
                 <NavLink to="/services" onClick={closeMobileMenu} isActive={location.pathname === '/services'}>Services</NavLink>
                 <NavLink to="/portfolio" onClick={closeMobileMenu} isActive={location.pathname === '/portfolio'}>Portfolio</NavLink>
                 <NavLink to="/aboutus" onClick={closeMobileMenu} isActive={location.pathname === '/aboutus'}>About us</NavLink>
-                <NavLink to="/blog" onClick={closeMobileMenu} isActive={location.pathname === '/blog'}>Blog</NavLink>
+                <NavLink to="/blog/devsecops/1" onClick={closeMobileMenu} isActive={location.pathname === '/blog/devsecops/1'}>Blog</NavLink>
               </div>
               <div className="py-6">
                 <Link
