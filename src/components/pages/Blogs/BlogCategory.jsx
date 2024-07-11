@@ -6,7 +6,7 @@ function BlogCategory({title, description, img, category}) {
     <div className="blog_category_cards_content mx-10 2xl:mx-0">
         <div className="grid_container grid lg:grid-cols-3 gap-10 ">
             <div className="card-img flex justify-stretch items-stretch">
-                <img src={img} alt="" className='max-w-full' />
+                <img src={img} alt="" className='max-w-full h-auto' />
             </div>
             <div className="card-content lg:col-span-2 flex flex-col justify-around gap-3">
                 <div className="title">

@@ -53,7 +53,7 @@ function Blog() {
             </div>
           </div>
         </div>
-        <div className="blog_categories_cards max-w-screen-2xl mx-auto mt-24">
+        <div className="blog_categories_cards max-w-7xl mx-auto mt-24">
             <BlogCategories title="Enhance Code Securty with Pixee.ai" description="We delve into the integration of Pixe.ai and SonarCloud within two active GitHub projects: CRM and Cardio Chatbot. Pixe.ai, a robust DevSecOps tool, ensures seamless security and compliance checks, while SonarCloud provides comprehensive code quality analysis. By combining these tools, we achieved a streamlined development workflow that enhances both security and code integrity. The article covers the setup process, configuration steps, and the benefits of leveraging these tools together. Additionally, ..." img={PixeeBanner} category='DevSecOps' />
         </div>
       </div>
